@@ -1,16 +1,16 @@
 public class Main {
 
     public int[] numbers;
-    public String frase;
+    public String texto;
 
-    public static int contarPalabtas(String frase){
-        String[] palabras = frase.split(" ");
+    public static int contarPalabtas(String texto){
+        String[] palabras = texto.split(" ");
             return palabras.length;
     }
 
 
-    public static int contarLetras(String frase){
-        int letras = frase.replace(" ","").length();
+    public static int contarLetras(String texto){
+        int letras = texto.replace(" ","").length();
             return letras;
     }
 
