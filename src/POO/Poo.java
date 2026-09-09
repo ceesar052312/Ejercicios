@@ -10,15 +10,15 @@ public class Poo {
         public String transmision;
         public String combustible;
         public int velocidadMaxima;
-        public int nivelDeCombustible;
+        public String traccion;
         public int kilometraje;
         public boolean encendido;
         public String placa;
         public int capacidadPasajeros;
-        public int capacidadTanque;
-        public int presionLlantas;
+        public String tipoAsientos;
+        public String tipoLLantas;
 
-        public Carro(String marca, String modelo, int year, String color, int puertas, String transmision, String combustible, int velocidadMaxima, int nivelDeCombustible, int kilometraje, boolean encendido, String placa, int capacidadPasajeros, int capacidadTanque, int presionLlantas) {
+        public Carro(String marca, String modelo, int year, String color, int puertas, String transmision, String combustible, int velocidadMaxima, String traccion , int kilometraje, boolean encendido, String placa, int capacidadPasajeros, String tipoAsientos, String tipoLLantas) {
             this.marca = marca;
             this.modelo = modelo;
             this.year = year;
@@ -27,13 +27,13 @@ public class Poo {
             this.transmision = transmision;
             this.combustible = combustible;
             this.velocidadMaxima = velocidadMaxima;
-            this.nivelDeCombustible = nivelDeCombustible;
+            this.traccion = traccion;
             this.kilometraje = kilometraje;
             this.encendido = encendido;
             this.placa = placa;
             this.capacidadPasajeros = capacidadPasajeros;
-            this.capacidadTanque = capacidadTanque;
-            this.presionLlantas = presionLlantas;
+            this.tipoAsientos = tipoAsientos;
+            this.tipoLLantas = tipoLLantas;
         }
     }
 
