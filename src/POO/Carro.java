@@ -1,7 +1,6 @@
 package POO;
 
-public class Poo {
-    public class Carro {
+public class Carro {
         public String marca;
         public String modelo;
         public int year;
@@ -18,7 +17,7 @@ public class Poo {
         public String tipoAsientos;
         public String tipoLLantas;
 
-        public Carro(String marca, String modelo, int year, String color, int puertas, String transmision, String combustible, int velocidadMaxima, String traccion , int kilometraje, boolean encendido, String placa, int capacidadPasajeros, String tipoAsientos, String tipoLLantas) {
+        public Carro(String marca, String modelo, int year, String color, int puertas, String transmision, String combustible, int velocidadMaxima, String traccion, int kilometraje, boolean encendido, String placa, int capacidadPasajeros, String tipoAsientos, String tipoLLantas) {
             this.marca = marca;
             this.modelo = modelo;
             this.year = year;
@@ -34,13 +33,6 @@ public class Poo {
             this.capacidadPasajeros = capacidadPasajeros;
             this.tipoAsientos = tipoAsientos;
             this.tipoLLantas = tipoLLantas;
+
         }
     }
-
-        public static void main(String[] args) {
-
-
-
-
-        }
-}
