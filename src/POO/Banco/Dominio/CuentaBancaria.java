@@ -25,21 +25,21 @@ public class CuentaBancaria {
     public void retirar(double cantidad){
         if (cantidad <= this.balance){
             this.balance -= cantidad;
-            System.out.printf("Realizado");
+            System.out.println("Realizado");
         }
         else{
-            System.out.printf("Saldo insuficiente");
+            System.out.println("Saldo insuficiente");
         }
     }
     public void transferir(double cantidad, CuentaBancaria destinatario){
         retirar(cantidad);
         destinatario.depositar(cantidad);
-        System.out.printf("Transferencia realizada");
+        System.out.println("Transferencia realizada");
     }
     public void mostrarSaldo(){
-        System.out.printf("Su numero de cuente es ", this.numero);
-        System.out.printf("Su saldo es de ", this.balance);
-        System.out.printf("Esta a nombre de ", this.titular);
-        System.out.printf("El banco es ", this.banco);
+        System.out.println("Su numero de cuenta es " + this.numero);
+        System.out.println("Su saldo es de " + this.balance);
+        System.out.println("Esta a nombre de " + this.titular.nombre);
+        System.out.println("El banco es " + this.banco.nombre);
     }
 }
