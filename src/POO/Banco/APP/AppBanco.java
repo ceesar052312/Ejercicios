@@ -44,20 +44,26 @@ public class AppBanco {
         //Transacciones
 
         cuentaCesar.transferir(20000,cuentaJulian);
-        cuentaJulian.mostrarSaldo();
         cuentaJuan.depositar(15000);
-        cuentaJuan.mostrarSaldo();
         cuentaMateo.retirar(100000);
-        cuentaMateo.mostrarSaldo();
-        cuentaCesar.mostrarSaldo();
         cuentaCarlos.transferir(50000,cuentaCesar);
         cuentaGregorio.depositar(100000);
-        cuentaGregorio.mostrarSaldo();
         cuentaMiguel.transferir(50000,cuentaEzequiel);
-        cuentaEzequiel.mostrarSaldo();
-        cuentaMiguel.mostrarSaldo();
         cuentaValentin.retirar(50000);//Quiero que falle aproposito
         cuentaVictor.retirar(15000);
+        cuentaCarlos.transferir(50000,cuentaMateo);
+        cuentaVictor.transferir(10000,cuentaGregorio);
+
+        cuentaCesar.mostrarSaldo();
+        cuentaCarlos.mostrarSaldo();
+        cuentaJulian.mostrarSaldo();
+        cuentaJuan.mostrarSaldo();
+        cuentaMateo.mostrarSaldo();
+        cuentaMiguel.mostrarSaldo();
+        cuentaEzequiel.mostrarSaldo();
+        cuentaValentin.mostrarSaldo();
+        cuentaVictor.mostrarSaldo();
+
 
 
 
