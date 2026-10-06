@@ -13,6 +13,32 @@ public class Barco extends Vehiculo {
         this.radar = radar;
     }
 
+    public void desplegarVelas() {
+        if (velero <= 1){
+            this.velero++;
+            super.acelerar();
+        }
+        System.out.println("Velas desplegadas");
+    }
+
+    public void dirigirRumbo(String rumbo){
+        if (!this.brujula.isEmpty()){
+            System.out.println("nuevo rumbo hacia " + rumbo);
+        }
+        else {
+            System.out.println("No hay brujula");
+        }
+    }
+
+    public void escanear(){
+        if (!this.radar.isEmpty()){
+            System.out.println("No se detectan amenazas");
+        }
+        else {
+            System.out.println("No hay escaner");
+        }
+    }
+
     public int getVelero() {
         return velero;
     }

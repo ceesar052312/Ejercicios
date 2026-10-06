@@ -26,6 +26,21 @@ public class Avion extends Vehiculo {
         estaVolando = true;
     }
 
+    public void aterrizar() {
+        for (int i = 0; i < 200; i++){
+            super.frenar();
+        }
+        System.out.println("El avion esta aterizando");
+
+        estaVolando = false;
+    }
+
+    public void girar (String direccion){
+        if (estaVolando = true ){
+            System.out.println("El avion esta girando a la " + direccion);
+        }
+    }
+
 
     public int getLlantas() {
         return llantas;
