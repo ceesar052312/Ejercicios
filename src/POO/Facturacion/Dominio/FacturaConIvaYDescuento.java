@@ -10,4 +10,12 @@ public class FacturaConIvaYDescuento extends FacturaConIva{
         super(numero, valor, fecha, iva);
         this.porcDescuento = porcDescuento;
     }
+
+    public int getPorcDescuento() {
+        return porcDescuento;
+    }
+
+    public void setPorcDescuento(int porcDescuento) {
+        this.porcDescuento = porcDescuento;
+    }
 }

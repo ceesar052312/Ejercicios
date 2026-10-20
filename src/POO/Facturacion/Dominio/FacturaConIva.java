@@ -13,7 +13,15 @@ public abstract class FacturaConIva extends Factura {
 
     @Override
     public long calcularTotal() {
-        return 0;
+        return this.getValor() + this.getValor() * this.iva / 100;
+    }
+
+    public int getIva() {
+        return iva;
+    }
+
+    public void setIva(int iva) {
+        this.iva = iva;
     }
 }
 
